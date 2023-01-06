@@ -6,6 +6,7 @@ const DemoPage = () => {
         { href: '/search-pokemon', text: 'Search Pokemon' },
         { href: '/paginated-query', text: 'Paginated Query Example' },
         { href: '/useInfinite-query', text: 'useInfiniteQuery Example' },
+        { href: '/usemutation', text: 'useMutation Example' },
     ]
 
     return (

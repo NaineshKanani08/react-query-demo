@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React, { useState } from 'react'
 import usePaginatedQuery from '../api/usePaginatedQuery'
 
@@ -44,7 +45,7 @@ const PaginatedPokemonList = () => {
                         return (
                             <tr key={id}>
                                 <td>{id}</td>
-                                <td><img src={imgUrl} /></td>
+                                <td><Image src={imgUrl} alt="image" width={100} height={100} /></td>
                                 <td>{item.name}</td>
                             </tr>
                         )

@@ -7,7 +7,9 @@ const usePaginatedQuery =(offset,limit) => {
         return res.data
     }
     return (
-        useQuery(['paginated-data',offset],()=>fetchPaginated(offset))
+        useQuery(['paginated-data',offset],()=>fetchPaginated(offset),{
+        enabled : true,
+        })
     )
 }
 
